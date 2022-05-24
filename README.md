@@ -7,3 +7,5 @@
  - Economic factors : Interest rates, Economic outlook, Inflation, Deflation, Economic and political shocks, Changes in economic policy, The value of the Korean Won.
 
 [4 factors](https://finance.zacks.com/factors-determine-price-stocks-2313.html)
+
+fear and greed index: https://edition.cnn.com/markets/fear-and-greed
