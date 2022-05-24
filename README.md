@@ -1,4 +1,4 @@
-# factors_affecting_stock_price
+# factors that affect stock prices
 
 [Factors that can affect stock prices](https://www.getsmarteraboutmoney.ca/invest/investment-products/stocks/factors-that-can-affect-stock-prices/)
  - Company news and performance : news releases on earnings and profits, and future estimated earnings, announcement of dividends, introduction of a new product or a product recall, securing a new large contract, employee layoffs, anticipated takeover or merger, a change of management, accounting errors or scandals
