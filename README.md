@@ -9,3 +9,5 @@
 [4 factors](https://finance.zacks.com/factors-determine-price-stocks-2313.html)
 
 fear and greed index: https://edition.cnn.com/markets/fear-and-greed
+
+vix(volatility) index: https://finance.yahoo.com/quote/%5EVIX/
