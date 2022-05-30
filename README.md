@@ -11,3 +11,8 @@
 fear and greed index: https://edition.cnn.com/markets/fear-and-greed
 
 vix(volatility) index: https://finance.yahoo.com/quote/%5EVIX/
+
+## 주요 주가 정보 취득 사이트
+
+[시간대별 주가, 1분, 10분단위](https//vip.mk.co.kr/newSt/price/minprice.php?stCode=035420)
+[투자자별 매매동향](//open.shinhaninvest.com/goodicyber/mk/1206.jsp?code=005930)
