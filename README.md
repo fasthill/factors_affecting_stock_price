@@ -35,3 +35,17 @@ vix(volatility) index: https://finance.yahoo.com/quote/%5EVIX/
 [원화 환률](https://kr.investing.com/currencies/usd-krw)
 
 [WTI선물 지수](https://kr.investing.com/commodities/crude-oil)
+
+[선물지수](https://kr.investing.com/indices/indices-futures)
+
+[나스닥종합지수, IXIC](https://kr.investing.com/indices/nasdaq-composite)
+
+[S&P500지수, SPX](https://kr.investing.com/indices/us-spx-500)
+
+[다우지수,DJI](https://kr.investing.com/indices/us-30)
+
+[코스피지수, KS11](https://kr.investing.com/indices/kospi)
+
+[코스닥지수, KQ11](https://kr.investing.com/indices/kosdaq)
+
+[미국 소비자물가지수(CPI)](https://kr.investing.com/economic-calendar/cpi-733)
