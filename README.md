@@ -30,4 +30,4 @@ vix(volatility) index: https://finance.yahoo.com/quote/%5EVIX/
 
 [미국 3개월 만기 국채 수익률](https://kr.investing.com/rates-bonds/u.s.-3-month-bond-yield)
 
-[한국 3개월 만기 국채 수익률](https://kr.investing.com/rates-bonds/south-korea-3-year-bond-yield)
+[한국 3개월 만기 국채 수익률](https://kr.investing.com/rates-bonds/south-korea-3-month-bond-yield)
