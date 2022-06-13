@@ -49,3 +49,5 @@ vix(volatility) index: https://finance.yahoo.com/quote/%5EVIX/
 [코스닥지수, KQ11](https://kr.investing.com/indices/kosdaq)
 
 [미국 소비자물가지수(CPI)](https://kr.investing.com/economic-calendar/cpi-733)
+
+[필라델피아 반도체 지수 (SOX)](https://kr.investing.com/indices/phlx-semiconductor)
