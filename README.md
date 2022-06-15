@@ -40,6 +40,8 @@ vix(volatility) index: https://finance.yahoo.com/quote/%5EVIX/
 
 [나스닥종합지수, IXIC](https://kr.investing.com/indices/nasdaq-composite)
 
+[나스닥종합지수-과거부터](https://kr.investing.com/indices/us-30-historical-data)
+
 [S&P500지수, SPX](https://kr.investing.com/indices/us-spx-500)
 
 [다우지수,DJI](https://kr.investing.com/indices/us-30)
