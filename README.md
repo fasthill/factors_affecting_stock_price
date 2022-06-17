@@ -20,22 +20,6 @@ vix(volatility) index: https://finance.yahoo.com/quote/%5EVIX/
 
 [투자자별 매매동향](https://open.shinhaninvest.com/goodicyber/mk/1206.jsp?code=005930)
 
-[미국 10년 만기 국채 수익률](https://kr.investing.com/rates-bonds/u.s.-10-year-bond-yield)
-
-[한국 10년 만기 국채 수익률](https://kr.investing.com/rates-bonds/south-korea-10-year-bond-yield)
-
-[미국 2년 만기 국채 수익률](https://kr.investing.com/rates-bonds/u.s.-2-year-bond-yield)
-
-[한국 2년 만기 국채 수익률](https://kr.investing.com/rates-bonds/south-korea-2-year-bond-yield)
-
-[미국 3개월 만기 국채 수익률](https://kr.investing.com/rates-bonds/u.s.-3-month-bond-yield)
-
-[달러 인덱스](https://kr.investing.com/currencies/us-dollar-index)
-
-[원화 환률](https://kr.investing.com/currencies/usd-krw)
-
 [선물지수](https://kr.investing.com/indices/indices-futures)
 
 [미국 소비자물가지수(CPI)](https://kr.investing.com/economic-calendar/cpi-733)
-
-[필라델피아 반도체 지수 (SOX)](https://kr.investing.com/indices/phlx-semiconductor)
