@@ -19,3 +19,5 @@ vix(volatility) index: https://finance.yahoo.com/quote/%5EVIX/
 [투자자별 매매동향](https://open.shinhaninvest.com/goodicyber/mk/1206.jsp?code=005930)
 
 [선물지수](https://kr.investing.com/indices/indices-futures)
+
+[https://www.usagold.com/daily-gold-price-history/
