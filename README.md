@@ -20,4 +20,6 @@ vix(volatility) index: https://finance.yahoo.com/quote/%5EVIX/
 
 [선물지수](https://kr.investing.com/indices/indices-futures)
 
-[https://www.usagold.com/daily-gold-price-history/
+[gold](//www.usagold.com/daily-gold-price-history/)
+
+[연방 이자율](https://tradingeconomics.com/united-states/interest-rate)
