@@ -1,4 +1,3 @@
-
 from selenium import webdriver as wd
 from bs4 import BeautifulSoup as bs
 import requests
@@ -9,14 +8,11 @@ import pandas as pd
 import re
 import os, sys
 
-
 # 삼성전자 005930, 현대차 005380, 네이버 035420, KT&G 033780, 
 code = {'sec': '005930', 'hyunmotor': '005380', 'naver': '035420', 'ktng': '033780'}
 
-
 today = datetime.date.today()
 today = today.strftime('%Y%m%d')
-
 
 def get_data(ticker):
     for i in range(3):
@@ -29,13 +25,11 @@ def get_data(ticker):
             df = df.append(df1)
     return df
 
-
 column_eng = ['date', 'price', 'change', 'change(%)', 'amount', 'volume']
 column_kor = ['날짜', '현재가', '등락', '등락률(%)', '체결량', '거래량']
 
-dir_name = 'c:/jupyter연습/factors_affecting_stock_price/data/stocks/daily_price/'
+dir_name = 'data/stocks/daily_price/'
 f_name = '_10min_price_'
-
 
 for key, val in code.items():
     df = get_data(val)
@@ -46,8 +40,3 @@ for key, val in code.items():
     df.insert(1, 'time', df_temp.apply(lambda x : datetime.datetime.strptime(x[-5:], "%H:%M").time()))
     filename = '{}{}_{}{}{}.csv'.format(dir_name, val, key, f_name, today)
     df.to_csv(filename, index=False)
-
-
-
-
-
