@@ -22,7 +22,8 @@ def get_data(ticker):
         if i == 0 :
             df = df1
         else:
-            df = df.append(df1)
+#             df = df.append(df1)
+            df = pd.concat([df,df1], ignore_index=True)
     return df
 
 column_eng = ['date', 'price', 'change', 'change(%)', 'amount', 'volume']
