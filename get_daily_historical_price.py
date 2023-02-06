@@ -60,7 +60,7 @@ column_kor = ['날짜', '현재가', '등락', '등락률(%)', '체결량', '거
 # In[ ]:
 
 
-dir_name = 'data/stocks/daily_price/'
+dir_name = 'data/company_daily_price/'
 f_name = '_10min_price_'
 
 
