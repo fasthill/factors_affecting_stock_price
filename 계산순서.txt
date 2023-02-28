@@ -1,0 +1,23 @@
+1. get_common_data_since_last_update_to_pickle.ipynb 실행하기 (./)
+  - 공통으로 사용되는 매일 변동되는 지표 모음
+
+2. get_company_daily_price_since_last_update_to_pickle 실행하기 (./)
+  - 회사별로 매일 주가 변동항목, 투자자별 매수매도 매일 현황
+
+3. pricechange_4class 실행하기 (./categorise)
+  - 회사별 매일 최고가, 최저가 발생 시간 분류
+
+4. get_daily_historical_price_to_pickle (./)
+  - 회사별 매일 10분간격 주가 변동 추이 현황
+
+5. combine_features 실행하기 (./categorise)
+  - 1, 2 결합, weekday 추가, 전날 대비 최종가 변동 분류(0.5%, 1% 기준, close_cr), 
+     시작가 대비 최고가 변동 분류(0.5%, 1% 기준, r_open_high)
+  - data cleaning
+  - 
+5. select_best_fit_features 실행하기 (./machine_learning)
+  - LogisticRegression 실행하기
+    . coef_ 기준 주요인자 선별하기 (min 영향 feature 하나씩 제거)
+  - 선별된 feature를 이용하여 SGDClassifier 이용하여 정확도 1차 계산하기
+  - 인공신경망을 이용하여 정확도 계산하기
+  - 정밀도, 재현율, f1-score, confusion matrix 확인하기
