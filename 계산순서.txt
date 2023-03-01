@@ -6,9 +6,11 @@
 
 3. pricechange_4class 실행하기 (./categorise)
   - 회사별 매일 최고가, 최저가 발생 시간 분류
+  - 4번 자료에서 취득한 데이터를 이용. 데이터가 없으면  계산 결과를 0으로 처리하여 진행
 
 4. get_daily_historical_price_to_pickle (./)
   - 회사별 매일 10분간격 주가 변동 추이 현황
+  - 10분 가격 자료가 없는 회사는 3번 과정 스킵
 
 5. combine_features 실행하기 (./categorise)
   - 1, 2 결합, weekday 추가, 전날 대비 최종가 변동 분류(0.5%, 1% 기준, close_cr), 
