@@ -23,3 +23,6 @@
   - 선별된 feature를 이용하여 SGDClassifier 이용하여 정확도 1차 계산하기
   - 인공신경망을 이용하여 정확도 계산하기
   - 정밀도, 재현율, f1-score, confusion matrix 확인하기
+
+6. increase_accuracy_종목이름
+  - 5번을 통하여 정확도, 정밀도가 높은 선택된 종목을 개별로 정확도 향상을 위한 분석
