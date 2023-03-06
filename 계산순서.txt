@@ -11,23 +11,31 @@
 4. get_daily_historical_price_to_pickle (./)
   - 회사별 매일 10분간격 주가 변동 추이 현황
   - 10분 가격 자료가 없는 회사는 3번 과정 스킵
+  - ***_4class.ipynb 실행 필요 없어짐. 추후 시간대별 분석이 필요시 추가필요
 
 5. combine_features 실행하기 (./categorise)
   - 1, 2 결합, weekday 추가, 전날 대비 최종가 변동 분류(0.5%, 1% 기준, close_cr), 
      시작가 대비 최고가 변동 분류(0.5%, 1% 기준, r_open_high)
   - data cleaning
   - 
-5. select_best_fit_features 실행하기 (./machine_learning)
+6. select_best_fit_features 실행하기 (./machine_learning)
   - LogisticRegression 실행하기
     . coef_ 기준 주요인자 선별하기 (min 영향 feature 하나씩 제거)
   - 선별된 feature를 이용하여 SGDClassifier 이용하여 정확도 1차 계산하기
-  - 인공신경망을 이용하여 정확도 계산하기
-  - 정밀도, 재현율, f1-score, confusion matrix 확인하기
 
-6. increase_accuracy_종목이름
+  - 위 내용 재검토.
+    . 결정트리로 fearure_importance 선정하여 진행검토
+
+  - 인공신경망을 이용하여 정확도 계산하기
+  - 정밀도, 재현율, f1-score, confusion matrix 확인하기 (정밀도가 최우선)
+
+7. increase_accuracy_종목이름
   - 5번을 통하여 정확도, 정밀도가 높은 선택된 종목을 개별로 정확도 향상을 위한 분석
 
 
 *** 1년 데이터 결과가 최근 6개월 데이터보다 월등히 정확도가 떨어짐. 최근 6개월로 한정하여 적용해야 하나?
     지속적 분석 필요
 *** +, 0.5%, 1% 1.5%, 2% 상승분으로만 target으로 남기고 분석. 
+
+최근 1개월치를 test data로 검증.
+결정트리로 fearure_importance  확인
