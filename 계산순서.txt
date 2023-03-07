@@ -39,3 +39,5 @@
 
 최근 1개월치를 test data로 검증.
 결정트리로 fearure_importance  확인
+
+find_accuracy_6months.ipynb로 6개월 단위 분석함.
