@@ -41,3 +41,5 @@
 결정트리로 fearure_importance  확인
 
 find_accuracy_6months.ipynb로 6개월 단위 분석함.
+
+앙상블로 분석해 보기, 일주일 단위로 분석해 보기.
