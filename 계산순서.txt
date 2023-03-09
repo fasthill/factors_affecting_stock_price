@@ -46,4 +46,5 @@ find_accuracy_6months.ipynb로 6개월 단위 분석함.
 
 lightgbm 적용 좋음. gridsearchcv, cv=stratified 확인, .feature_importance_ 확인
 결과를 dataframe으로 구성하여 한 눈에 볼 수 있도록.(최적parameter에 따른 정확도 추이 분석용)
-params 좀더 확인하기.
+
+-3일까지 기초자료 보강하기
