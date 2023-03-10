@@ -48,4 +48,4 @@ lightgbm 적용 좋음. gridsearchcv, cv=stratified 확인, .feature_importance_
 결과를 dataframe으로 구성하여 한 눈에 볼 수 있도록.(최적parameter에 따른 정확도 추이 분석용)
 
 -3일까지 기초자료 보강하기. 마이너스feature 영향.
-gridsearchcv를 for loop으로 방법
+gridsearchcv를 for loop. 10번 이상이면 stop. 혹은 발산 몇 번이상이면 stop등 추가 필요. 이후 최적 로직 만들어서 최소 반복 방법 만들어서 진행
