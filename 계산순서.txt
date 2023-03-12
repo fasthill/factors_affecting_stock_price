@@ -49,3 +49,11 @@ lightgbm 적용 좋음. gridsearchcv, cv=stratified 확인, .feature_importance_
 
 -3일까지 기초자료 보강하기. 마이너스feature 영향.
 gridsearchcv를 for loop. 10번 이상이면 stop. 혹은 발산 몇 번이상이면 stop등 추가 필요. 이후 최적 로직 만들어서 최소 반복 방법 만들어서 진행
+
+max_depth = [1,2,3,4,5],
+njm_leaves = [3,4,5,6,7],
+learning_rate = [0.03, 0.05, 0.1, 0.2, 0.3]
+colsample_bytree = [0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+subsample = [0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+n_estimator =[5, 10, 15, 20]
+num_class = [1]
