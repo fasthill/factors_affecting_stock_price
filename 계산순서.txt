@@ -60,3 +60,5 @@ num_class = [1]
 
 
 combine_features-2days_expand.ipynb에서 common 지표 -2일자 계산하여 집어넣기
+
+current date, previous date 로직 간단히 수정해야 함. (combine_features-2days_expand.ipynb 에서)
