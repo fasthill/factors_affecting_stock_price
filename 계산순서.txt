@@ -57,3 +57,6 @@ colsample_bytree = [0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
 subsample = [0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
 n_estimator =[5, 10, 15, 20]
 num_class = [1]
+
+
+combine_features-2days_expand.ipynb에서 common 지표 -2일자 계산하여 집어넣기
