@@ -31,6 +31,9 @@
 
 7. increase_accuracy_종목이름
   - 5번을 통하여 정확도, 정밀도가 높은 선택된 종목을 개별로 정확도 향상을 위한 분석
+  
+
+low_close ratio.ipynb: 일중 종가/저가의 상승비율에 따른 발생 빈도
 
 
 *** 1년 데이터 결과가 최근 6개월 데이터보다 월등히 정확도가 떨어짐. 최근 6개월로 한정하여 적용해야 하나?
@@ -61,4 +64,9 @@ num_class = [1]
 
 combine_features-2days_expand.ipynb에서 common 지표 -2일자 계산하여 집어넣기
 
+
 current date, previous date 로직 간단히 수정해야 함. (combine_features-2days_expand.ipynb 에서)
+
+lightgbm 젹정한 column수만으로도 precision 올릴 수 있음. (여러번 try  해 봐야 함.)
+
+dict to csv, list to csv sub 만들어야 함.
