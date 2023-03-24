@@ -70,3 +70,5 @@ current date, previous date 로직 간단히 수정해야 함. (combine_features
 lightgbm 젹정한 column수만으로도 precision 올릴 수 있음. (여러번 try  해 봐야 함.)
 
 dict to csv, list to csv sub 만들어야 함.
+
+신규 자료 (US Summary)분석 기타 다른 프로그램에 포함시켜야 함. 위에서 2번부터 포함시켜야 함.
