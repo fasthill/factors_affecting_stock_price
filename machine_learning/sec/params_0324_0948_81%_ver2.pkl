@@ -1,0 +1,11 @@
+0
+gbdt
+6
+0.0015
+1300
+0.6
+1
+-1
+binary
+binary_logloss
+1.5
