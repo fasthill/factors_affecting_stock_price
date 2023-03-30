@@ -1,0 +1,38 @@
+1. 기본 샘플(base format)로 진행
+2. 결과 parameter를 기준으로 세부 조정
+   . 'num_leaves' :  [3, 4, 5, 6,], # 두번째로 중요, num_leaves는 작은 데이터면 작은 숫자로
+     'learning_rate' :  [0.0005, 0.001, 0.0015, 0.002,],
+#    'max_delta_step' :  [0.4, 0.5, 0.6],
+      'n_estimators' :  [900, 1000, 1100, 1200, 1300],
+      'colsample_bytree' :  [0.3, 0.4, 0.5, 0.6,], # = feature fraction, column sampling. 위의 subsample과 같이 튜닝.
+      'subsample' : [0.1, 0.2, 0.3, ], #  [0.1, 0.2, 0.3, 0.4], # 세번째로 중요. = bagging fraction, row sampling. 아래 colsample_bytree과 같이 튜닝.
+      'max_depth' :  [-1], # 가장 먼저 튜닝 필요 -1이 default (무한깊이) 일반적으로 default가 가장 좋음.
+      'objective': ['binary'],
+      'metric': ['binary_logloss'],
+      'scale_pos_weight': [1.0, 1.5], # posiive  증가, class imbalance 경감, scale_pos_weight > 0.0, default=1.0. 
+#    'min_child_samples' : [30],
+      'reg_alpha' : [0, 0.5, 1], # =='lambda_l1': [0, 5], # default 0
+      'reg_lambda' : [0, 0.5]
+
+3. min_child_samples 는 15 ~ 25 사이에서 트라이 해봄직함.
+
+3. sub_sample_for_bin 을 250000, 300000을 적용
+
+3. accuracy가 높을 경우 규제적용 
+  - parameter의 범위를 늘려서 진행해야 함.
+  - 시간이 많이 걸림.
+
+4. feature selection 진행후 위 결과의 기준을 적용
+
+5. feature를 다시 전체로 놓고 다시 한번 진행
+
+6. feature를 줄이면 precision이 높아지는 경우가 발생하므로 반드시 실행을 하여 기록해 두어야 함.
+   (kakao, sec 등)
+   
+7. precision 값이 같으면, f1score, recall 등 다른 index가 높은 것을 골라서 사용해야 함.
+   (예; kakao의 경우 value6보다 value8이 모든 index에서 좋은 결과를 보임)
+
+6. 1차 결론 (precision 기준)
+  - good (80%이상), mid(70%이상), bad(70%미만)
+  
+7. 추후 시간을 봐서 재tuning
