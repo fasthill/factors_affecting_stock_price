@@ -36,6 +36,6 @@
 영향이 있는 feature를 없애면 precision이 나빠짐.
 
 6. 1차 결론 (precision 기준)
-  - good (80%이상), mid(70%이상), bad(70%미만)
+  - good (80%이상), mid(70%이상), bad(70%미만), verybad(50%미만)
   
 7. 추후 시간을 봐서 재tuning
