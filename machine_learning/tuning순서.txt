@@ -31,6 +31,9 @@
    
 7. precision 값이 같으면, f1score, recall 등 다른 index가 높은 것을 골라서 사용해야 함.
    (예; kakao의 경우 value6보다 value8이 모든 index에서 좋은 결과를 보임)
+   
+7. 베이시안으로 최적화하고, 영향이 없는 feature를 없애버리니 올라감. sec의 경우 89에서 93%으로 향상됨.
+영향이 있는 feature를 없애면 precision이 나빠짐.
 
 6. 1차 결론 (precision 기준)
   - good (80%이상), mid(70%이상), bad(70%미만)
