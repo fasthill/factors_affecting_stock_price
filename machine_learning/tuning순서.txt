@@ -34,8 +34,11 @@
    
 7. 베이시안으로 최적화하고, 영향이 없는 feature를 없애버리니 올라감. sec의 경우 89에서 93%으로 향상됨.
 영향이 있는 feature를 없애면 precision이 나빠짐.
+fearture제거후 min_child_weight을 마지막으로 적용하니 올라감(naver의 경우)  -https://injo.tistory.com/44 설명 확인
 
 6. 1차 결론 (precision 기준)
   - good (80%이상), mid(70%이상), bad(70%미만), verybad(50%미만)
   
 7. 추후 시간을 봐서 재tuning
+
+파일명에 roc포함해야 함.- precision값을 먼저 지정하도록.

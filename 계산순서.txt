@@ -32,6 +32,8 @@
 7. increase_accuracy_종목이름
   - 5번을 통하여 정확도, 정밀도가 높은 선택된 종목을 개별로 정확도 향상을 위한 분석
   
+8. ml-testing
+- testing하기
 
 low_close ratio.ipynb: 일중 종가/저가의 상승비율에 따른 발생 빈도
 
