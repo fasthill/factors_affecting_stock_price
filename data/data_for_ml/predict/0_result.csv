@@ -1,0 +1,2 @@
+date,sec_precision,sec_predict,sec_yes,sec_no,naver_precision,naver_predict,naver_yes,naver_no,kakao_precision,kakao_predict,kakao_yes,kakao_no,mobis_precision,mobis_predict,mobis_yes,mobis_no,lgchemical_precision,lgchemical_predict,lgchemical_yes,lgchemical_no,secpre_precision,secpre_predict,secpre_yes,secpre_no,lgenergy_precision,lgenergy_predict,lgenergy_yes,lgenergy_no
+2023-04-04,1.00,0,0.55,0.45,1.00,0,0.51,0.49,1.00,0,0.64,0.36,1.00,0,0.60,0.40,1.00,0,0.51,0.49,1.00,0,0.78,0.22,0.83,0,0.50,0.50
