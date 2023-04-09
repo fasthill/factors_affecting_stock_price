@@ -73,6 +73,6 @@ lightgbm 젹정한 column수만으로도 precision 올릴 수 있음. (여러번
 
 dict to csv, list to csv sub 만들어야 함.
 
-신규 자료 (US Summary)분석 기타 다른 프로그램에 포함시켜야 함. 위에서 2번부터 포함시켜야 함.
-
 ****** yahoo에서 받는 자료의 날짜 일치 부분 확인해야 함. ******
+
+4월 8일부터 volume을 거래량을 바꾸어 실시. 
