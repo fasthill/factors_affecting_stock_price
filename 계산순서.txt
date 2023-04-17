@@ -76,3 +76,5 @@ dict to csv, list to csv sub 만들어야 함.
 ****** yahoo에서 받는 자료의 날짜 일치 부분 확인해야 함. ******
 
 4월 8일부터 volume을 거래량을 바꾸어 실시. 
+
+wonderware edrawmax 설치후 flowchart 진행
