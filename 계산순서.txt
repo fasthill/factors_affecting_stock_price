@@ -1,5 +1,7 @@
 1. get_common_data_since_last_update_to_pickle.ipynb 실행하기 (./)
   - 공통으로 사용되는 매일 변동되는 지표 모음
+1.1 get_common_data_since_last_update_to_pickle.ipynb 실행하기 : 
+  - 추가 회사 자료 추출용으로 임시로 진행
 
 2. get_company_daily_price_since_last_update_to_pickle 실행하기 (./)
   - 회사별로 매일 주가 변동항목, 투자자별 매수매도 매일 현황
@@ -76,5 +78,9 @@ dict to csv, list to csv sub 만들어야 함.
 ****** yahoo에서 받는 자료의 날짜 일치 부분 확인해야 함. ******
 
 4월 8일부터 volume을 거래량을 바꾸어 실시. 
+(아직 미 수행(4/18일 현재), yahoo에서 받은 자료을 이용
+ - volume으로 하기 위하여는 기존의 자료를 처음부터 추출하는 것보다는 
+   총거래금액/종가를 계산하여 거래량을 추정하여 기입하는 것이 현실적. 값의 차이가 크지 않음.
+- 전체적으로 바꾸어 놓고 vol로 추출하여 사용하면 됨.
 
 wonderware edrawmax 설치후 flowchart 진행
