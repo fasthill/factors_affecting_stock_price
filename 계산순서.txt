@@ -84,3 +84,5 @@ dict to csv, list to csv sub 만들어야 함.
 - 전체적으로 바꾸어 놓고 vol로 추출하여 사용하면 됨.
 
 wonderware edrawmax 설치후 flowchart 진행
+
+ml_testing/predict_v0.ipynb 로 실제 데이터 분석지행
