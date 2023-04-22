@@ -85,4 +85,5 @@ dict to csv, list to csv sub 만들어야 함.
 
 wonderware edrawmax 설치후 flowchart 진행
 
+predict전에 4(compnay update),5(common data 취득),6 (common combine)실행
 ml_testing/predict_v0.ipynb 로 실제 데이터 분석지행
