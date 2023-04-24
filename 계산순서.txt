@@ -87,3 +87,5 @@ wonderware edrawmax 설치후 flowchart 진행
 
 predict전에 4(compnay update),5(common data 취득),6 (common combine)실행
 ml_testing/predict_v0.ipynb 로 실제 데이터 분석지행
+
+문장에 hyperparameter 수정하는 단계를 작성하도록.. 누적해서.
