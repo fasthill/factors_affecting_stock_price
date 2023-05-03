@@ -1,0 +1,19 @@
+,parameter,value
+0,boosting_type,"['gbdt', 'dart']"
+1,learning_rate,"(0.0001, 0.004, 'log-uniform')"
+2,num_leaves,"(3, 15)"
+3,max_depth,"(0, 50)"
+4,min_child_samples,"(5, 40)"
+5,min_child_weight,"(0, 10)"
+6,max_bin,"(100, 1200)"
+7,subsample,"(0.005, 1.0, 'uniform')"
+8,colsample_bytree,"(0.005, 1.0, 'uniform')"
+9,subsample_for_bin,"(100000, 1000000)"
+10,scale_pos_weight,"(0.2, 2.0, 'uniform')"
+11,n_estimators,"(700, 15000)"
+12,reg_alpha,"(0.0, 8.0, 'uniform')"
+13,reg_lambda,"(0.0, 8.0, 'uniform')"
+14,force_col_wise,['true']
+15,boost_from_average,"[True, False]"
+16,objective,['binary']
+17,metric,['binary_logloss']
