@@ -94,3 +94,5 @@ _future는 실시간 분석으로.. 분석자료에서는 제외하는 것이 �
 -- bond 10년치도 포함하여 분석해야 함. 
 
 5PM 선물 종가 edt time -13시간.
+
+https://smha-61749.medium.com/pytorch-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%94%A5%EB%9F%AC%EB%8B%9D-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%84%A4%EA%B3%84%ED%95%98%EA%B3%A0-%ED%85%9C%ED%94%8C%EB%A6%BF-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0-ccf222552e63
