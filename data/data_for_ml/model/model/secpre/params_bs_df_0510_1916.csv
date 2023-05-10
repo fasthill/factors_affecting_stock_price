@@ -1,0 +1,24 @@
+parameter,iter_1,iter_2,iter_3,iter_4,iter_5,iter_6
+boost_from_average,"[True, False]","[True, False]","[True, False]","[True, False]","[True, False]","[True, False]"
+boosting_type,"['gbdt', 'dart']","['gbdt', 'dart']","['gbdt', 'dart']","['gbdt', 'dart']","['gbdt', 'dart']","['gbdt', 'dart']"
+colsample_bytree,"(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')"
+cv,3,3,3,3,3,3
+force_col_wise,['true'],['true'],['true'],['true'],['true'],['true']
+importance_type,['split'],['split'],['split'],['split'],['split'],['split']
+iterations,50,50,50,50,50,50
+learning_rate,"(0.0001, 0.004, 'log-uniform')","(0.0001, 0.004, 'log-uniform')","(0.0001, 0.004, 'log-uniform')","(0.0001, 0.004, 'log-uniform')","(0.0001, 0.004, 'log-uniform')","(0.0001, 0.004, 'log-uniform')"
+max_bin,"(100, 1000)","(100, 1000)","(100, 1000)","(100, 1000)","(100, 1000)","(100, 1000)"
+max_depth,"(0, 50)","(0, 50)","(0, 50)","(0, 50)","(0, 50)","(0, 50)"
+metric,['binary_logloss'],['binary_logloss'],['binary_logloss'],['binary_logloss'],['binary_logloss'],['binary_logloss']
+min_child_samples,"(5, 40)","(5, 40)","(5, 40)","(5, 40)","(5, 40)","(5, 40)"
+min_child_weight,,,"(0.001, 10.0)","(0.001, 10.0)","(0.001, 5.0)",
+n_estimators,"(700, 5000)","(700, 5000)","(700, 5000)","(700, 5000)","(700, 5000)","(700, 5000)"
+num_col,98,98,98,98,98,98
+num_leaves,"(3, 15)","(3, 15)","(3, 15)","(3, 15)","(3, 15)","(3, 15)"
+objective,['binary'],['binary'],['binary'],['binary'],['binary'],['binary']
+reg_alpha,"(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')"
+reg_lambda,"(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')"
+scale_pos_weight,"(0.2, 2.0, 'uniform')","(0.2, 2.0, 'uniform')","(0.2, 2.0, 'uniform')","(0.2, 2.0, 'uniform')","(0.2, 2.0, 'uniform')","(0.2, 2.0, 'uniform')"
+scoring,precision,accuracy,accuracy,precision,precision,precision
+subsample,"(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')"
+subsample_for_bin,"(100000, 500000)","(100000, 500000)","(100000, 500000)","(100000, 500000)","(100000, 500000)","(100000, 500000)"
