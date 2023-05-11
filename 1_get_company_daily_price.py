@@ -87,7 +87,7 @@ def set_date(start_date_l, end_date_l): # 일정 기간 데이터 취득
 
 def get_data(start_date_l, end_date_l):
     
-    column_name_l = ['date_l', 'close', 'change', 'close_cr', 'open', 'high', 'low',
+    column_name_l = ['date', 'close', 'change', 'close_cr', 'open', 'high', 'low',
                   'vol', 'vol_amount','total_amount', 'total_counts' ]
     # ['일자', '종가', '대비', '등락률', '시가', '고가', '저가', '거래량', 
     #                                 '거래대금', '시가총액', '상장주식수']
@@ -102,18 +102,18 @@ def get_data(start_date_l, end_date_l):
 
     df = pd.read_html(driver.page_source, attrs={"class": "CI-GRID-BODY-TABLE"}, flavor=["lxml", "bs4"])[0]
     df.columns = column_name_l
-    df['date_l'] = df['date_l'].apply(lambda x : datetime.datetime.strptime(x, "%Y/%m/%d"))
-    df_get_l = df[['date_l', 'open', 'high', 'low', 'close', 'close_cr', 'vol']]
+    df['date'] = df['date'].apply(lambda x : datetime.datetime.strptime(x, "%Y/%m/%d"))
+    df_get_l = df[['date', 'open', 'high', 'low', 'close', 'close_cr', 'vol']]
     
     return df_get_l
 
 
 def non_empty_index_df(df_input, start_date_l, end_date_l): # 토,일,공휴일등 거래가 없는 일자도 모두 포함
     date_range_ts = pd.date_range(start=start_date_l, end=end_date_l)
-    df_input.set_index('date_l', inplace=True)
+    df_input.set_index('date', inplace=True)
     df_out_l = pd.DataFrame(columns = df_input.columns)
-    df_out_l.insert(0, 'date_l', date_range_ts)
-    df_out_l.set_index('date_l', inplace=True)
+    df_out_l.insert(0, 'date', date_range_ts)
+    df_out_l.set_index('date', inplace=True)
     df_out_l.update(df_input)
     df_out_l.reset_index(inplace=True)
     return df_out_l
@@ -121,8 +121,7 @@ def non_empty_index_df(df_input, start_date_l, end_date_l): # 토,일,공휴일�
 
 def concat_df(df_o_l, df):
     df_o_l = pd.concat([df_o_l, df], ignore_index=True)
-    df_o_l.drop_duplicates(subset=['date_l'], keep='last', inplace=True)
-#     df_o_l.drop_duplicates(subset=['date_l'], keep='first', inplace=True)
+    df_o_l.drop_duplicates(subset=['date'], keep='last', inplace=True)
     df_o_l.sort_values(by=[df_o_l.columns[0]], inplace=True)
     df_o_l.index = np.arange(0, len(df_o_l))  # 일련 번호 오름차순으로 재 설정
     return df_o_l
@@ -168,7 +167,7 @@ code = {'005930': ['삼성전자', 'sec'], '373220': ['LG에너지솔루션', 'l
         '028050': ['삼성엔지니어링', 'ssengineering'], '361610': ['SK아이이테크놀로지', 'skietech'],
         '086280': ['현대글로비스', 'glovis'], '302440': ['SK바이오사이언스', 'skbio'],
        }
-code = {'005930': ['삼성전자', 'sec'],}
+# code = {'005930': ['삼성전자', 'sec'],}
 
 pkl_directory = 'data/company_pkl/'
 modification_time = pd.read_pickle(pkl_directory + 'modification_time_company_his.pkl')
@@ -176,13 +175,17 @@ modification_time = pd.read_pickle(pkl_directory + 'modification_time_company_hi
 for key, val in code.items():
     com_name = "/".join([key, val[0]])
     pkl_name= '{}_historical.pkl'.format(val[1])
+    
+    dd = pd.read_pickle(pkl_directory + pkl_name)
+
     try :
         df_o = pd.read_pickle(pkl_directory + pkl_name)
-        start_date = df_o['date_l'].iloc[len(df_o)-1]
+        start_date = df_o['date'].iloc[len(df_o)-1]
     except :
         start_date = datetime.date(2022, 1, 1)   # 데이터 취득 시작 일자     
 
     end_date = datetime.date.today()
+    
     get_data_company(com_name)
     df_get = get_data(start_date, end_date)
     df_out = non_empty_index_df(df_get, start_date, end_date)
@@ -193,13 +196,13 @@ for key, val in code.items():
         df_o = df_out.copy()
     df_o = concat_df(df_o, df_out) # append df to original df
     df_o.replace(np.nan, '', inplace=True)
-    df_o.to_pickle(pkl_directory+pkl_name)
-    df_o.to_csv(pkl_directory+pkl_name.replace('pkl','csv'))
+    df_o.to_pickle(pkl_directory+"pp"+pkl_name)
+    df_o.to_csv(pkl_directory+"pp"+pkl_name.replace('pkl','csv'))
     modification_time.loc[pkl_name][0] = datetime.datetime.now()
     
 # df_time = pd.DataFrame.from_dict(modification_time, orient='index', columns=['time'])
-modification_time.to_pickle(pkl_directory+'modification_time_company_his.pkl')
-modification_time.to_csv(pkl_directory+'modification_time_company_his.csv')
+modification_time.to_pickle(pkl_directory+'ppmodification_time_company_his.pkl')
+modification_time.to_csv(pkl_directory+'ppmodification_time_company_his.csv')
 
 
 # ### 투자자별 현황
@@ -262,7 +265,7 @@ def get_daily_data(date_range):
         df_new.set_index('investor', inplace=True)
         dft = df_new.T
         dft.columns = column_name
-        dft.insert(0, "date_l", datetime.datetime.strptime(datei, "%Y%m%d"))
+        dft.insert(0, "date", datetime.datetime.strptime(datei, "%Y%m%d"))
         dft.reset_index(drop=True, inplace=True)
         if df_org is None:
             df_org = dft.copy()
@@ -348,30 +351,31 @@ for key, val in code.items():
     pkl_name= '{}_investors.pkl'.format(val[1])
     try :
         df_o = pd.read_pickle(pkl_directory + pkl_name)
-        start_date = df_o['date_l'].iloc[len(df_o)-1]
+        start_date = df_o['date'].iloc[len(df_o)-1]
     except :
         start_date = datetime.date(2022, 1, 1)   # 데이터 취득 시작 일자 
         
 #     start_date_l = datetime.date_l(2022, 1, 1)   # 데이터 취득 시작 일자
 
     end_date = datetime.date.today()
+    
     df_out = get_data_company_investor(com_name, start_date, end_date)
     try :
         df_out = df_out[df_o.columns]     
         df_o = concat_df(df_o, df_out) # append df to original df
     except :
-        df_col = ['date_l', 'retail', 'foreigner', 'institution', 'financial', 'invtrust',
+        df_col = ['date', 'retail', 'foreigner', 'institution', 'financial', 'invtrust',
                   'pension', 'privequity', 'bank', 'insurance', 'financeetc',
                   'corporateetc', 'foreigneretc']
         df_out = df_out[df_col]
         df_o = df_out.copy()
-    df_o.to_pickle(pkl_directory+pkl_name)
-    df_o.to_csv(pkl_directory+pkl_name.replace('pkl','csv'))
+    df_o.to_pickle(pkl_directory+"PP"+pkl_name)
+    df_o.to_csv(pkl_directory+"PP"+pkl_name.replace('pkl','csv'))
     modification_time.loc[pkl_name][0] = datetime.datetime.now()
     
 # df_time = pd.DataFrame.from_dict(modification_time, orient='index', columns=['time'])
-modification_time.to_pickle(pkl_directory+'modification_time_company_inv.pkl')
-modification_time.to_csv(pkl_directory+'modification_time_company_inv.csv')
+modification_time.to_pickle(pkl_directory+'PPmodification_time_company_inv.pkl')
+modification_time.to_csv(pkl_directory+'PPmodification_time_company_inv.csv')
 
 driver.close()
 driver.quit()
