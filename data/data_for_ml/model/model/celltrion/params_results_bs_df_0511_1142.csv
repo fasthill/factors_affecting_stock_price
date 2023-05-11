@@ -1,0 +1,94 @@
+parameter,iter_1,iter_2,iter_3
+boost_from_average,"[True, False]","[True, False]","[True, False]"
+boost_from_average,False,False,True
+boosting_type,"['gbdt', 'dart']","['gbdt', 'dart']","['gbdt', 'dart']"
+boosting_type,gbdt,dart,gbdt
+class_weight,,,
+colsample_bytree,"(0.5, 1.0, 'uniform')","(0.5, 1.0, 'uniform')","(0.5, 1.0, 'uniform')"
+colsample_bytree,0.9085466569171743,0.8299671859311659,0.5946361243538187
+cv,3,3,3
+cv,3,3,3
+force_col_wise,['true'],['true'],['true']
+force_col_wise,true,true,true
+importance_type,['split'],['split'],['split']
+importance_type,split,split,split
+iterations,50,50,50
+iterations,50,50,50
+learning_rate,0.00015359885759507342,0.00027106148839684045,0.0001
+learning_rate,"(0.0001, 0.004, 'log-uniform')","(0.0001, 0.004, 'log-uniform')","(0.0001, 0.004, 'log-uniform')"
+max_bin,979,1168,813
+max_bin,"(100, 1000)","(100, 1500)","(100, 1000)"
+max_depth,12,18,50
+max_depth,"(0, 50)","(0, 50)","(0, 50)"
+metric,binary_logloss,binary_logloss,binary_logloss
+metric,['binary_logloss'],['binary_logloss'],['binary_logloss']
+min_child_samples,"(5, 40)","(5, 40)","(5, 40)"
+min_child_samples,15,21,5
+min_child_weight,,,"(0.001, 10.0)"
+min_child_weight,0.001,0.001,1.383846587742895
+min_split_gain,0.0,0.0,0.0
+n_estimators,"(700, 5000)","(700, 10000)","(700, 5000)"
+n_estimators,4570,700,3335
+n_jobs,-1,-1,-1
+num_col,98,98,98
+num_col,98,98,98
+num_leaves,12,4,13
+num_leaves,"(3, 20)","(3, 20)","(3, 20)"
+objective,['binary'],['binary'],['binary']
+objective,binary,binary,binary
+random_state,42,42,42
+reg_alpha,3.789816123211128,0.0,4.0
+reg_alpha,"(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')"
+reg_lambda,"(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')"
+reg_lambda,3.929472190309338,4.0,0.15633505409726198
+scale_pos_weight,"(0.2, 2.0, 'uniform')","(0.2, 2.0, 'uniform')","(0.2, 2.0, 'uniform')"
+scale_pos_weight,0.6273478046029703,0.5293674170354306,0.8504867512153014
+scoring,precision,precision,precision
+scoring,precision,precision,precision
+silent,warn,warn,warn
+subsample,0.009847587924116587,1.0,0.5540580646510967
+subsample,"(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')"
+subsample_for_bin,339812,100000,500000
+subsample_for_bin,"(100000, 500000)","(100000, 500000)","(100000, 500000)"
+subsample_freq,0,0,0
+verbose,0,0,0
+best_score,0.7249482401656314,0.7378364389233955,0.7446581196581197
+best_index,40.0,18.0,46.0
+acc_train,0.7236180904522613,0.6482412060301508,0.7286432160804021
+acc_val,0.74,0.64,0.66
+acc_test,0.47619047619047616,0.5079365079365079,0.49206349206349204
+precision,0.35294117647058826,0.2857142857142857,0.3333333333333333
+recall,0.21428571428571427,0.07142857142857142,0.14285714285714285
+f1score,0.26666666666666666,0.1142857142857143,0.2
+roc,0.45,0.4642857142857143,0.45714285714285713
+tn,24.0,30.0,27.0
+fp,11.0,5.0,8.0
+fn,22.0,26.0,24.0
+tp,6.0,2.0,4.0
+acc_test1,0.6666666666666666,0.6190476190476191,0.6190476190476191
+precision1,0.6666666666666666,0.5,0.5
+recall1,0.25,0.125,0.125
+f1score1,0.36363636363636365,0.2,0.2
+roc1,0.5865384615384616,0.5240384615384616,0.5240384615384616
+tn1,12.0,12.0,12.0
+fp1,1.0,1.0,1.0
+fn1,6.0,7.0,7.0
+tp1,2.0,1.0,1.0
+acc_test2,0.3333333333333333,0.42857142857142855,0.38095238095238093
+precision2,0.375,0.5,0.4
+recall2,0.25,0.08333333333333333,0.16666666666666666
+f1score2,0.3,0.14285714285714285,0.23529411764705882
+roc2,0.3472222222222222,0.48611111111111105,0.41666666666666674
+tn2,4.0,8.0,6.0
+fp2,5.0,1.0,3.0
+fn2,9.0,11.0,10.0
+tp2,3.0,1.0,2.0
+acc_test3,0.42857142857142855,0.47619047619047616,0.47619047619047616
+precision3,0.16666666666666666,0.0,0.2
+recall3,0.125,0.0,0.125
+f1score3,0.14285714285714288,0.0,0.15384615384615385
+roc3,0.3701923076923077,0.3846153846153846,0.40865384615384615
+tn3,8.0,10.0,9.0
+fp3,5.0,3.0,4.0
+fn3,7.0,8.0,7.0
+tp3,1.0,0.0,1.0
