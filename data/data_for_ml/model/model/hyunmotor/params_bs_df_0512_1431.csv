@@ -1,0 +1,26 @@
+parameter,iter_1
+cv,3
+scoring,precision
+num_col,98
+iterations,50
+boosting_type,"['gbdt', 'dart']"
+learning_rate,"(0.0001, 0.004, 'log-uniform')"
+num_leaves,"(3, 20)"
+max_depth,"(0, 50)"
+min_child_samples,"(5, 50)"
+min_child_weight,"(5, 15)"
+max_bin,"(100, 1000)"
+subsample,"(0.005, 1.0, 'uniform')"
+colsample_bytree,"(0.005, 1.0, 'uniform')"
+subsample_for_bin,"(100000, 1200000)"
+scale_pos_weight,"[0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.  1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8
+ 1.9]"
+n_estimators,"(700, 10000)"
+reg_alpha,"[0.  0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.  1.1 1.2 1.3 1.4 1.5 1.6 1.7
+ 1.8 1.9 2.  2.1 2.2 2.3 2.4 2.5 2.6 2.7 2.8 2.9]"
+reg_lambda,"[0.  0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.  1.1 1.2 1.3 1.4 1.5 1.6 1.7
+ 1.8 1.9 2.  2.1 2.2 2.3 2.4 2.5 2.6 2.7 2.8 2.9]"
+force_col_wise,['true']
+boost_from_average,"[True, False]"
+objective,['binary']
+metric,['binary_logloss']

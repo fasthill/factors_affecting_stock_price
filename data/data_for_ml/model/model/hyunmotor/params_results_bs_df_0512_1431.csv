@@ -1,0 +1,96 @@
+parameter,iter_1
+boost_from_average,"[True, False]"
+boost_from_average,True
+boosting_type,"['gbdt', 'dart']"
+boosting_type,dart
+class_weight,
+colsample_bytree,"(0.005, 1.0, 'uniform')"
+colsample_bytree,0.09455369504164898
+cv,3
+cv,3
+force_col_wise,['true']
+force_col_wise,true
+importance_type,split
+iterations,50
+iterations,50
+learning_rate,0.0021508118095526227
+learning_rate,"(0.0001, 0.004, 'log-uniform')"
+max_bin,382
+max_bin,"(100, 1000)"
+max_depth,44
+max_depth,"(0, 50)"
+metric,['binary_logloss']
+metric,binary_logloss
+min_child_samples,30
+min_child_samples,"(5, 50)"
+min_child_weight,"(5, 15)"
+min_child_weight,10
+min_split_gain,0.0
+n_estimators,"(700, 10000)"
+n_estimators,5356
+n_jobs,-1
+num_col,98
+num_col,98
+num_leaves,"(3, 20)"
+num_leaves,4
+objective,['binary']
+objective,binary
+random_state,42
+reg_alpha,"[0.  0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.  1.1 1.2 1.3 1.4 1.5 1.6 1.7
+ 1.8 1.9 2.  2.1 2.2 2.3 2.4 2.5 2.6 2.7 2.8 2.9]"
+reg_alpha,1.1
+reg_lambda,2.3000000000000003
+reg_lambda,"[0.  0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.  1.1 1.2 1.3 1.4 1.5 1.6 1.7
+ 1.8 1.9 2.  2.1 2.2 2.3 2.4 2.5 2.6 2.7 2.8 2.9]"
+scale_pos_weight,0.6
+scale_pos_weight,"[0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.  1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8
+ 1.9]"
+scoring,precision
+scoring,precision
+silent,warn
+subsample,1.0
+subsample,"(0.005, 1.0, 'uniform')"
+subsample_for_bin,661142
+subsample_for_bin,"(100000, 1200000)"
+subsample_freq,0
+verbose,0
+best_score,0.6319444444444445
+best_index,43.0
+acc_train,0.72
+acc_val,0.62
+acc_test,0.6031746031746031
+precision,0.9090909090909091
+recall,0.29411764705882354
+f1score,0.4444444444444445
+roc,0.6298174442190669
+tn,28.0
+fp,1.0
+fn,24.0
+tp,10.0
+acc_test1,0.7619047619047619
+precision1,1.0
+recall1,0.4444444444444444
+f1score1,0.6153846153846153
+roc1,0.7222222222222222
+tn1,12.0
+fp1,0.0
+fn1,5.0
+tp1,4.0
+acc_test2,0.5238095238095238
+precision2,0.8
+recall2,0.3076923076923077
+f1score2,0.4444444444444444
+roc2,0.5913461538461539
+tn2,7.0
+fp2,1.0
+fn2,9.0
+tp2,4.0
+acc_test3,0.5238095238095238
+precision3,1.0
+recall3,0.16666666666666666
+f1score3,0.2857142857142857
+roc3,0.5833333333333334
+tn3,9.0
+fp3,0.0
+fn3,10.0
+tp3,2.0

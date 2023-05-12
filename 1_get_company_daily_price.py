@@ -196,13 +196,13 @@ for key, val in code.items():
         df_o = df_out.copy()
     df_o = concat_df(df_o, df_out) # append df to original df
     df_o.replace(np.nan, '', inplace=True)
-    df_o.to_pickle(pkl_directory+"pp"+pkl_name)
-    df_o.to_csv(pkl_directory+"pp"+pkl_name.replace('pkl','csv'))
+    df_o.to_pickle(pkl_directory+pkl_name)
+    df_o.to_csv(pkl_directory+pkl_name.replace('pkl','csv'))
     modification_time.loc[pkl_name][0] = datetime.datetime.now()
     
 # df_time = pd.DataFrame.from_dict(modification_time, orient='index', columns=['time'])
-modification_time.to_pickle(pkl_directory+'ppmodification_time_company_his.pkl')
-modification_time.to_csv(pkl_directory+'ppmodification_time_company_his.csv')
+modification_time.to_pickle(pkl_directory+'modification_time_company_his.pkl')
+modification_time.to_csv(pkl_directory+'modification_time_company_his.csv')
 
 
 # ### 투자자별 현황
@@ -369,13 +369,13 @@ for key, val in code.items():
                   'corporateetc', 'foreigneretc']
         df_out = df_out[df_col]
         df_o = df_out.copy()
-    df_o.to_pickle(pkl_directory+"PP"+pkl_name)
-    df_o.to_csv(pkl_directory+"PP"+pkl_name.replace('pkl','csv'))
+    df_o.to_pickle(pkl_directory+pkl_name)
+    df_o.to_csv(pkl_directory+pkl_name.replace('pkl','csv'))
     modification_time.loc[pkl_name][0] = datetime.datetime.now()
     
 # df_time = pd.DataFrame.from_dict(modification_time, orient='index', columns=['time'])
-modification_time.to_pickle(pkl_directory+'PPmodification_time_company_inv.pkl')
-modification_time.to_csv(pkl_directory+'PPmodification_time_company_inv.csv')
+modification_time.to_pickle(pkl_directory+'modification_time_company_inv.pkl')
+modification_time.to_csv(pkl_directory+'modification_time_company_inv.csv')
 
 driver.close()
 driver.quit()
