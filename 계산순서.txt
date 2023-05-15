@@ -101,3 +101,6 @@ https://smha-61749.medium.com/pytorch-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%9
 0. n-estimator 줄이기 5000 -> 3000
 1. 규제 줄이기: 4 - 2로
 2. 0-1 반복하기
+
+
+해당일 9시 전이면 이전일까지 취득. 해당일은 16시 이후 취득.
