@@ -1,0 +1,23 @@
+parameter,iter_1,iter_2,iter_3
+cv,5,5,5
+scoring,precision,precision,precision
+num_col,98,98,98
+iterations,50,50,50
+boosting_type,"['gbdt', 'dart']","['gbdt', 'dart']","['gbdt', 'dart']"
+learning_rate,"(0.0001, 0.004, 'log-uniform')","(0.0001, 0.004, 'log-uniform')","(0.0001, 0.004, 'log-uniform')"
+num_leaves,"(3, 20)","(3, 20)","(3, 20)"
+max_depth,"(0, 50)","(0, 50)","(0, 50)"
+min_child_samples,"(5, 40)","(5, 40)","(5, 40)"
+max_bin,"(100, 1000)","(100, 1000)","(100, 1000)"
+subsample,"(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')"
+colsample_bytree,"(0.5, 1.0, 'uniform')","(0.5, 1.0, 'uniform')","(0.5, 1.0, 'uniform')"
+subsample_for_bin,"(100000, 500000)","(100000, 500000)","(100000, 500000)"
+scale_pos_weight,"(0.2, 2.0, 'uniform')","(0.2, 2.0, 'uniform')","(0.2, 2.0, 'uniform')"
+n_estimators,"(700, 5000)","(700, 3000)","(700, 3000)"
+reg_alpha,"(0.0, 4.0, 'uniform')","(0.0, 1.0, 'uniform')","(0.0, 1.0, 'uniform')"
+reg_lambda,"(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')"
+force_col_wise,['true'],['true'],['true']
+importance_type,['split'],['split'],['split']
+boost_from_average,"[True, False]","[True, False]","[True, False]"
+objective,['binary'],['binary'],['binary']
+metric,['binary_logloss'],['binary_logloss'],['binary_logloss']
