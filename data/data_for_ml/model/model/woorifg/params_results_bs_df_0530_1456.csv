@@ -1,0 +1,76 @@
+parameter,iter_1
+boost_from_average,"[True, False]"
+boost_from_average,False
+boosting_type,"['gbdt', 'dart']"
+boosting_type,dart
+class_weight,
+colsample_bytree,"(0.5, 1.0, 'uniform')"
+colsample_bytree,0.7176826828488699
+cv,5
+cv,5
+force_col_wise,['true']
+force_col_wise,true
+importance_type,split
+importance_type,['split']
+iterations,50
+iterations,50
+learning_rate,"(0.0001, 0.004, 'log-uniform')"
+learning_rate,0.004
+max_bin,126
+max_bin,"(100, 1000)"
+max_depth,31
+max_depth,"(0, 50)"
+metric,['binary_logloss']
+metric,binary_logloss
+min_child_samples,5
+min_child_samples,"(5, 40)"
+min_child_weight,0.001
+min_split_gain,0.0
+n_estimators,"(700, 5000)"
+n_estimators,3812
+n_jobs,-1
+num_col,98
+num_col,98
+num_leaves,"(3, 20)"
+num_leaves,4
+objective,['binary']
+objective,binary
+random_state,42
+reg_alpha,"(0.0, 4.0, 'uniform')"
+reg_alpha,1.763266162937274
+reg_lambda,"(0.0, 4.0, 'uniform')"
+reg_lambda,3.3836435518987087
+scale_pos_weight,"(0.2, 2.0, 'uniform')"
+scale_pos_weight,1.065404696134222
+scoring,precision
+scoring,precision
+silent,warn
+subsample,"(0.005, 1.0, 'uniform')"
+subsample,0.7761250010775634
+subsample_for_bin,"(100000, 500000)"
+subsample_for_bin,500000
+subsample_freq,0
+verbose,0
+best_score,0.6097121181331707
+best_index,41.0
+acc_train,0.8832684824902723
+acc_val,0.7894736842105263
+acc_test,0.6111111111111112
+train_precision,0.8728813559322034
+train_tn,124.0
+train_fp,15.0
+train_fn,15.0
+train_tp,103.0
+val_precision,0.7777777777777778
+val_tn,8.0
+val_fp,2.0
+val_fn,2.0
+val_tp,7.0
+test_precision,0.5714285714285714
+recall,0.5
+f1score,0.5333333333333333
+roc,0.5999999999999999
+test_tn,7.0
+test_fp,3.0
+test_fn,4.0
+test_tp,4.0
