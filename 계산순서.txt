@@ -104,7 +104,3 @@ https://smha-61749.medium.com/pytorch-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%9
 
 
 해당일 9시 전이면 이전일까지 취득. 해당일은 16시 이후 취득.
-
-kosdaq 5월 22일 missing. yahoo 데이터를 믿지 말고 국내 사이트사용 고려해야 함.
-
-우리금융 second best index parameter를 사용하여 refit 진행하여 대체 필요함.
