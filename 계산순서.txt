@@ -104,3 +104,6 @@ https://smha-61749.medium.com/pytorch-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%9
 
 
 해당일 9시 전이면 이전일까지 취득. 해당일은 16시 이후 취득.
+
+pytest 강좌
+https://www.youtube.com/watch?v=J0dslY7QSi4
