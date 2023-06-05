@@ -42,3 +42,5 @@ fearture제거후 min_child_weight을 마지막으로 적용하니 올라감(nav
 7. 추후 시간을 봐서 재tuning
 
 파일명에 roc포함해야 함.- precision값을 먼저 지정하도록.
+
+std 확인해야 함.

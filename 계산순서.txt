@@ -110,3 +110,5 @@ pytest 강좌
 https://www.youtube.com/watch?v=J0dslY7QSi4
 
 https://testautomationu.applitools.com. kangeuncolab. test automation university.
+
+PRECISION  std와 accuracy std는 다른가? precison은 높아야 하고, std는 낮아야 함.
