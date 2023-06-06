@@ -1,0 +1,77 @@
+parameter,iter_1,iter_2,iter_3,iter_4,iter_5
+boost_from_average,"[True, False]","[True, False]","[True, False]","[True, False]","[True, False]"
+boost_from_average,True,True,False,True,True
+boosting_type,"['gbdt', 'dart']","['gbdt', 'dart']","['gbdt', 'dart']","['gbdt', 'dart']","['gbdt', 'dart']"
+boosting_type,dart,dart,gbdt,gbdt,dart
+class_weight,,,,,
+colsample_bytree,"(0.5, 1.0, 'uniform')","(0.5, 1.0, 'uniform')","(0.5, 1.0, 'uniform')","(0.5, 1.0, 'uniform')","(0.5, 1.0, 'uniform')"
+colsample_bytree,0.5904923622635727,0.5483816481900653,0.6670528045850852,0.724132347832605,0.521626160272189
+cv,5,5,5,5,5
+cv,5,5,5,5,5
+force_col_wise,['true'],['true'],['true'],['true'],['true']
+force_col_wise,true,true,true,true,true
+importance_type,['split'],['split'],['split'],['split'],['split']
+importance_type,split,split,split,split,split
+iterations,50,100,100,100,100
+iterations,50,100,100,100,100
+learning_rate,0.0002863557046787069,0.00011180153853065533,0.000940873758095805,0.003196701373308276,0.004
+learning_rate,"(0.0001, 0.004, 'log-uniform')","(0.0001, 0.004, 'log-uniform')","(0.0001, 0.004, 'log-uniform')","(0.0001, 0.004, 'log-uniform')","(0.0001, 0.004, 'log-uniform')"
+max_bin,746,301,906,644,626
+max_bin,"(100, 1000)","(100, 1000)","(100, 1000)","(100, 1000)","(100, 1000)"
+max_depth,0,23,30,32,27
+max_depth,"(0, 50)","(0, 50)","(0, 50)","(0, 50)","(0, 50)"
+metric,binary_logloss,binary_logloss,binary_logloss,binary_logloss,binary_logloss
+metric,['binary_logloss'],['binary_logloss'],['binary_logloss'],['binary_logloss'],['binary_logloss']
+min_child_samples,"(5, 40)","(5, 40)","(5, 50)","(5, 50)","(5, 50)"
+min_child_samples,38,40,11,46,5
+min_child_weight,,,"(0.001, 10.0)","(0.001, 15.0)","(10.0, 20.0)"
+min_child_weight,0.001,0.001,10.0,15.0,20.0
+min_split_gain,0.0,0.0,0.0,0.0,0.0
+n_estimators,"(700, 5000)","(700, 5000)","(700, 5000)","(700, 5000)","(700, 5000)"
+n_estimators,3735,2890,986,4267,5000
+n_jobs,-1,-1,-1,-1,-1
+num_col,98,98,98,98,98
+num_col,98,98,98,98,98
+num_leaves,9,20,13,13,17
+num_leaves,"(3, 20)","(3, 20)","(3, 20)","(3, 20)","(3, 20)"
+objective,['binary'],['binary'],['binary'],['binary'],['binary']
+objective,binary,binary,binary,binary,binary
+random_state,42,42,42,42,42
+reg_alpha,0.36316479149591896,3.1240662448184704,2.090327618820962,2.210147241296861,2.6811325762932783
+reg_alpha,"(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')"
+reg_lambda,"(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')","(0.0, 4.0, 'uniform')","(0.0, 5.0, 'uniform')","(0.0, 5.0, 'uniform')"
+reg_lambda,2.672732435276995,2.5605411129160536,4.0,2.9818913106104956,0.0
+scale_pos_weight,"(0.2, 2.0, 'uniform')","(0.2, 2.0, 'uniform')","(0.2, 2.0, 'uniform')","(0.2, 2.0, 'uniform')","(0.2, 2.0, 'uniform')"
+scale_pos_weight,0.3746964370410484,0.3912029845185824,0.5463716380605641,0.8901261002788678,0.6383066606296474
+scoring,precision,precision,precision,precision,precision
+scoring,precision,precision,precision,precision,precision
+silent,warn,warn,warn,warn,warn
+subsample,0.7165861446656656,0.3907973441750661,0.2161177909220294,0.4664228836346421,0.4035411222663441
+subsample,"(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')","(0.005, 1.0, 'uniform')"
+subsample_for_bin,174517,343113,370912,334649,377703
+subsample_for_bin,"(100000, 500000)","(100000, 500000)","(100000, 500000)","(100000, 500000)","(100000, 500000)"
+subsample_freq,0,0,0,0,0
+verbose,0,0,0,0,0
+best_score,0.788888888888889,0.7955555555555556,0.6666666666666666,0.6463799393038523,0.7742857142857142
+best_index,29.0,62.0,61.0,21.0,26.0
+acc_train,0.4980544747081712,0.5136186770428015,0.6186770428015564,0.8482490272373541,0.642023346303502
+acc_val,0.47368421052631576,0.47368421052631576,0.5263157894736842,0.7368421052631579,0.5263157894736842
+acc_test,0.6363636363636364,0.6363636363636364,0.6818181818181818,0.5454545454545454,0.6818181818181818
+train_precision,1.0,0.9285714285714286,0.8545454545454545,0.855072463768116,0.8082191780821918
+train_tn,120.0,119.0,112.0,100.0,106.0
+train_fp,0.0,1.0,8.0,20.0,14.0
+train_fn,129.0,124.0,90.0,19.0,78.0
+train_tp,8.0,13.0,47.0,118.0,59.0
+val_precision,0.0,0.0,1.0,0.7777777777777778,0.6666666666666666
+val_tn,9.0,9.0,9.0,7.0,8.0
+val_fp,0.0,0.0,0.0,2.0,1.0
+val_fn,10.0,10.0,9.0,3.0,8.0
+val_tp,0.0,0.0,1.0,7.0,2.0
+test_precision,0.0,0.0,1.0,0.4,1.0
+recall,0.0,0.0,0.125,0.5,0.125
+f1score,0.0,0.0,0.2222222222222222,0.4444444444444445,0.2222222222222222
+roc,0.5,0.5,0.5625,0.5357142857142857,0.5625
+test_tn,14.0,14.0,14.0,8.0,14.0
+test_fp,0.0,0.0,0.0,6.0,0.0
+test_fn,8.0,8.0,7.0,4.0,7.0
+test_tp,0.0,0.0,1.0,4.0,1.0
