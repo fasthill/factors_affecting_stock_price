@@ -114,3 +114,6 @@ https://testautomationu.applitools.com. kangeuncolab. test automation university
 PRECISION  std와 accuracy std는 다른가? precison은 높아야 하고, std는 낮아야 함.
 
 네이버 진행중. 최적의 parameter 저장 필요.(params-space, params cv등), column 포함 한파일에 
+
+### ixf, qnet 파일 추가후 훈련시켜야 함. (5_calculate_....ipynb)
+ . 2023년 6월 16일에 4_get_common_data_futures에 새롭게 추가시켜 놓음
