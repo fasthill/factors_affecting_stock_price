@@ -1,0 +1,5 @@
+,iter1,iter1,iter1,iter2,iter2,iter2
+,best_index,mean_test_score,std_test_score,best_index,mean_test_score,std_test_score
+0,0.0,0.511686683422695,0.08438392343043508,0,0.5374671953924652,0.10451476721894673
+1,1.0,0.0,0.0,2,0.5268902691511388,0.08697591659878423
+2,,,,1,0.0,0.0
