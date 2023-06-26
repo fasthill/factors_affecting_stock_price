@@ -1,2 +1,5 @@
-20230621. sec
+20230621. sec  -> negative try중
 20230622. naver, hyunmotor, kakao
+
+jupyter notebook working.
+https://towardsdatascience.com/keep-jupyter-notebook-running-even-after-browser-is-closed-9a1937b7c615
