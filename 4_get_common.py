@@ -304,5 +304,3 @@ print("nasdaq-internet, len:", len(df))
 driver.close()
 driver.quit()
 
-
-print("nasdaq-internet, len:", len(df))
