@@ -3,3 +3,6 @@
 
 jupyter notebook working.
 https://towardsdatascience.com/keep-jupyter-notebook-running-even-after-browser-is-closed-9a1937b7c615
+
+buy 확률을 높이기 위하여 0.5% 상승과 비교: false가 나와도 위험부담 저감. 
+train 날짜를 줄여가면서 가장 높은 결과를 보이는 date term을 확인.
