@@ -138,6 +138,7 @@ time.sleep(1)
 
 
 code = COMPANY_CODE
+#code =  {'005930' : ['삼성전자', 'sec']}
 
 
 pkl_directory = 'data/company_pkl/'
@@ -174,6 +175,8 @@ for i, (key, val) in enumerate(code.items()):
     modification_time.loc[pkl_name][0] = datetime.datetime.now()
     
     print(com_name, f'{i+1}/{total}', end=', ') # 진행상황 확인용
+    sys.stdout.write(f'{com_name}: {i+1}/{total}, ')
+    sys.stdout.flush()
     
 modification_time.to_pickle(pkl_directory+'modification_time_company_his.pkl')
 modification_time.to_csv(pkl_directory+'modification_time_company_his.csv')
@@ -343,6 +346,8 @@ for i, (key, val) in enumerate(code.items()):
     modification_time.loc[pkl_name][0] = datetime.datetime.now()
     
     print(com_name, f'{i+1}/{total}', end=', ') # 진행상황 확인용
+    sys.stdout.write(f'{com_name}: {i+1}/{total}, ')
+    sys.stdout.flush()
     
 modification_time.to_pickle(pkl_directory+'modification_time_company_inv.pkl')
 modification_time.to_csv(pkl_directory+'modification_time_company_inv.csv')
