@@ -176,7 +176,7 @@ for i, (key, val) in enumerate(code.items()):
     
     print(com_name, f'{i+1}/{total}', end=', ') # 진행상황 확인용
     sys.stdout.write(f'{com_name}: {i+1}/{total}, ')
-    sys.stdout.flush()
+ #   sys.stdout.flush()
     
 modification_time.to_pickle(pkl_directory+'modification_time_company_his.pkl')
 modification_time.to_csv(pkl_directory+'modification_time_company_his.csv')
@@ -347,7 +347,7 @@ for i, (key, val) in enumerate(code.items()):
     
     print(com_name, f'{i+1}/{total}', end=', ') # 진행상황 확인용
     sys.stdout.write(f'{com_name}: {i+1}/{total}, ')
-    sys.stdout.flush()
+#    sys.stdout.flush()
     
 modification_time.to_pickle(pkl_directory+'modification_time_company_inv.pkl')
 modification_time.to_csv(pkl_directory+'modification_time_company_inv.csv')

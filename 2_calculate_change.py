@@ -246,4 +246,4 @@ for i, (key, val) in enumerate(code.items()):
     
     print(val[1], f'{i+1}/{total}', end=', ') # 진행상황 확인용
     sys.stdout.write(f'{val[1]}: {i+1}/{total}, ')
-    sys.stdout.flush()
+#    sys.stdout.flush()
