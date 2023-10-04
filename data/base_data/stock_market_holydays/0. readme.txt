@@ -1,0 +1,7 @@
+한국, 미국 휴장일 수정이 필요할 경우에,
+
+stock_market_holidays.csv 를 수정후에
+opening_days.ipynb를 이용하여
+opening_days_kor.pkl 과 opening_days_usa.pkl을 생성하여야 함.
+
+프로그램에는 .csv를 이용하지 않고 .pkl을 이용하고 있으니 위 사항을 꼭 지켜야 함.
