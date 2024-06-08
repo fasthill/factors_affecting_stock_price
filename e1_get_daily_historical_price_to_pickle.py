@@ -20,6 +20,9 @@ code = {'sec': 'KR7005930003', 'hyunmotor': 'KR7005380001', 'naver': 'KR70354200
 today_o = datetime.date.today()
 today = today_o.strftime('%Y%m%d')
 today_stock = today_o.strftime('%Y-%m-%d')
+# code = {'sec': 'KR7005930003'}
+# today='20240607'
+# today_stock = '2024-06-07'
 
 def get_data(ticker, today):
     url_base = 'https://stock.mk.co.kr/price/hourly?stock_code='
