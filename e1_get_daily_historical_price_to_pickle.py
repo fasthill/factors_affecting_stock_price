@@ -1,5 +1,5 @@
-from selenium import webdriver as wd
-from bs4 import BeautifulSoup as bs
+# from selenium import webdriver as wd
+# from bs4 import BeautifulSoup as bs
 import requests
 import datetime, time
 from datetime import date
@@ -8,8 +8,8 @@ import pandas as pd
 import re
 import os, sys
 
-import cfscrape  # Forbidden 403 발생시 requests 대신 사용
-scraper = cfscrape.create_scraper()
+# import cfscrape  # Forbidden 403 발생시 requests 대신 사용
+# scraper = cfscrape.create_scraper()
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) \
            AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
@@ -29,7 +29,8 @@ def get_data(ticker, today):
     for i in range(8):
         str1 = str(i+1)
         url = '{}{}{}{}{}{}'.format(url_base, ticker, '&day=', today, '&page=', str1)    
-        r = scraper.get(url, headers=headers)  
+        # r = scraper.get(url, headers=headers)  
+        r = requests.get(url, headers=headers)  
         html = r.content
         df1 = pd.read_html(html, attrs={"class": "table-stock line"}, flavor=["lxml", "bs4"])[0]
         if i == 0 :
