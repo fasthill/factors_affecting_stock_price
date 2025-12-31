@@ -26,6 +26,8 @@ COMPANY_CODE = {'005930': ['삼성전자', 'sec'], '373220': ['LG에너지솔루
         '377300': ['카카오페이', 'kakaopay'], '011070': ['LG이노텍', 'lginnotek'],
         '028050': ['삼성엔지니어링', 'ssengineering'], '361610': ['SK아이이테크놀로지', 'skietech'],
         '086280': ['현대글로비스', 'glovis'], '302440': ['SK바이오사이언스', 'skbio'],
+        '042700': ['한미반도체', 'hanmisemi'], '247540': ['에코프로비엠', 'ecopro'],
+        '196170': ['알테오젠', 'alteogen'], '012450': ['한화에어로스페이스', 'hanhwaaero'],
        }
 
 US_SECTOR_LIST = [['^SP500-40',  'spsy',  'spsy.pkl'], ['^GSPE', 'spny', 'spny.pkl'], ['^SP500-35', 'spxhc', 'spxhc.pkl'],
